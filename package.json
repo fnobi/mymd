@@ -1,0 +1,19 @@
+{
+  "name": "mymd",
+  "description": "render html with your custom format.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Fujisawa Shin",
+  "license": "BSD",
+  "dependencies": {
+    "optimist": "~0.5.2",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {
+    "chai": "~1.6.1",
+    "mocha": "~1.11.0"
+  }
+}
