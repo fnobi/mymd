@@ -27,5 +27,25 @@ describe('Engine', function () {
                 'もげもげ'
             ].join('\n'));
         });
+
+        it('head tag', function () {
+            var engine = new Engine({
+                h2: { head: '▼' }
+            });
+
+            var txt = engine.render([
+                '▼お題1',
+                'ほげほげ',
+                '▼お題2',
+                'もげもげ'
+            ].join('\n'));
+
+            expect(txt).to.be.equal([
+                '<h2>お題1</h2>',
+                'ほげほげ',
+                '<h2>お題2</h2>',
+                'もげもげ'
+            ].join('\n'));
+        });
     });
 });
